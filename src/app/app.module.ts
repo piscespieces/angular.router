@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { HeroesModule } from "./heroes/heroes.module";
 import { MoviesModule } from "./movies/movies.module";
+import { SongsModule } from "./songs/songs.module";
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 // Components
@@ -21,6 +22,7 @@ import { AppComponent } from "./app.component";
     MatToolbarModule,
     HeroesModule,
     MoviesModule,
+    SongsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
