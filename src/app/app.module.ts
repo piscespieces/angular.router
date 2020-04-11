@@ -6,6 +6,7 @@ import { Router } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { HeroesModule } from "./heroes/heroes.module";
+import { MoviesModule } from "./movies/movies.module";
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 // Components
@@ -16,9 +17,10 @@ import { AppComponent } from "./app.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeroesModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    HeroesModule,
+    MoviesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

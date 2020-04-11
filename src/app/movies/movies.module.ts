@@ -1,7 +1,10 @@
 import { NgModule } from "@angular/core";
+import { MovielistComponent } from "./movielist/movielist.component";
+
+import { MoviesRoutingModule } from "./movies-routing.module";
 
 @NgModule({
-  imports: [],
-  declarations: [],
+  imports: [MoviesRoutingModule],
+  declarations: [MovielistComponent],
 })
 export class MoviesModule {}

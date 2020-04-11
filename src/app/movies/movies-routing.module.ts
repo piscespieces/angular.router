@@ -1,7 +1,14 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-const moviesRoutes: Routes = [];
+import { MovielistComponent } from "./movielist/movielist.component";
+
+const moviesRoutes: Routes = [
+  {
+    path: "movies",
+    component: MovielistComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(moviesRoutes)],
