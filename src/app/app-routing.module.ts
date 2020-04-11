@@ -1,10 +1,14 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-const routes: Routes = [{ path: "", redirectTo: "/heroes", pathMatch: "full" }];
+// import { SelectivePreloadingStrategyService } from "./selective-preloading-strategy.service";
+
+const appRoutes: Routes = [
+  { path: "", redirectTo: "/heroes", pathMatch: "full" },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
