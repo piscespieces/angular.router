@@ -1,16 +1,25 @@
+// Modules
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-
 import { Router } from "@angular/router";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { HeroesModule } from "./heroes/heroes.module";
 
+import { MatToolbarModule } from "@angular/material/toolbar";
+// Components
+import { AppComponent } from "./app.component";
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HeroesModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HeroesModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

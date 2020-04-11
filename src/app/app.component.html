@@ -1,24 +1,18 @@
-<div class="container">
-  <nav class="">
-    <ul class="d-flex flex-row justify-content-around">
-      <li>
-        <a routerLink="/">
-          Heroes
-        </a>
-      </li>
-
-      <li>
-        <a routerLink="movies">
-          Movies
-        </a>
-      </li>
-
-      <li>
-        <a routerLink="songs">
-          Songs
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<mat-toolbar color="accent" class="d-flex flex-row justify-content-around">
+  <span>
+    <a routerLink="/" color="primary">
+      Heroes
+    </a>
+  </span>
+  <span>
+    <a routerLink="movies">
+      Movies
+    </a>
+  </span>
+  <span>
+    <a routerLink="songs">
+      Songs
+    </a>
+  </span>
+</mat-toolbar>
 <router-outlet></router-outlet>
